@@ -36,7 +36,7 @@ export default function Footer() {
 
       {/* Créditos */}
       <div className="text-center text-sm text-gray-500 mt-6 border-t border-gray-700 pt-4">
-        © {new Date().getFullYear()} Cafetería El Rincón - Todos los derechos reservados
+        © {new Date().getFullYear()} Herrero Coffe Bakery - Todos los derechos reservados
       </div>
     </footer>
   );
