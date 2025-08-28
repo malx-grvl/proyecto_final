@@ -1,8 +1,11 @@
 // src/components/Submenu.js
 import React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Submenu() {
+  const location = useLocation();
+
   const scrollLeft = () => {
     document.getElementById("submenu").scrollBy({ left: -200, behavior: "smooth" });
   };
@@ -10,6 +13,9 @@ export default function Submenu() {
   const scrollRight = () => {
     document.getElementById("submenu").scrollBy({ left: 200, behavior: "smooth" });
   };
+
+  // Detectar si estamos en el inicio "/"
+  const isHome = location.pathname === "/";
 
   return (
     <div className="relative bg-white shadow-md">
@@ -26,14 +32,21 @@ export default function Submenu() {
         id="submenu"
         className="flex gap-6 overflow-x-auto no-scrollbar px-12 py-3"
       >
-        <a href="#donuts" className="text-orange-600 font-bold whitespace-nowrap">☕ Cafés</a>
-        <a href="#combos" className="whitespace-nowrap">🥘 Combos </a>
-        <a href="#promos" className="whitespace-nowrap">💸 Promociones</a>
-        <a href="#frias" className="whitespace-nowrap">🧊 Bebidas Frías</a>
-        <a href="#calientes" className="whitespace-nowrap">🥤 Otras Bebidas</a>
-        <a href="#novedades" className="whitespace-nowrap">✨ Novedades</a>
-        <a href="#sandwich" className="whitespace-nowrap">🥪 Sandwiches</a>
-        <a href="#cookies" className="whitespace-nowrap">🍪 Cookies</a>
+        {isHome && (
+          <>
+            <a href="#cafes" className="text-orange-600 font-bold whitespace-nowrap">☕ Cafés</a>
+            <a href="#postres" className="whitespace-nowrap">🍰 Postres </a>
+            <a href="#refrescos" className="whitespace-nowrap">🥤 Refrescos</a>
+            <a href="#alitas" className="whitespace-nowrap">🍗 Alitas</a>
+            <a href="#cafeice" className="whitespace-nowrap">🧊 Cafe helado</a>
+            <a href="#tostadas" className="whitespace-nowrap">🍞 Tostadas</a>
+            <a href="#frapes" className="whitespace-nowrap">🍓 Frapes</a>
+            <a href="#sandwich" className="whitespace-nowrap">🥪 Sandwiches</a>
+          </>
+        )}
+        {/* Siempre visibles */}
+        <Link to="/promociones" className="whitespace-nowrap">💸 Promociones</Link>
+        <Link to="/novedades" className="whitespace-nowrap">✨ Novedades</Link>
       </div>
 
       {/* Botón Derecha */}
