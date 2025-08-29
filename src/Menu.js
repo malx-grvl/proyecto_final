@@ -73,7 +73,7 @@ export default function Menu() {
         </div>
       </section>
 
-       {/* Sección Postres */}
+      {/* Sección Refrescos */}
       <section id="refrescos">
         <h2 className="text-3xl font-bold mb-6">Refrescos</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -87,7 +87,7 @@ export default function Menu() {
         </div>
       </section>
 
-      {/* Sección Postres */}
+      {/* Sección Alitas */}
       <section id="alitas">
         <h2 className="text-3xl font-bold mb-6">Alitas</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -101,7 +101,7 @@ export default function Menu() {
         </div>
       </section>
 
-      {/* Sección Postres */}
+      {/* Sección Cafe helado */}
       <section id="cafeice">
         <h2 className="text-3xl font-bold mb-6">Cafe helado</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -115,7 +115,7 @@ export default function Menu() {
         </div>
       </section>
 
-      {/* Sección Postres */}
+      {/* Sección Tostadas */}
       <section id="tostadas">
         <h2 className="text-3xl font-bold mb-6">Tostadas</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -129,7 +129,7 @@ export default function Menu() {
         </div>
       </section>
 
-      {/* Sección Postres */}
+      {/* Sección Frapes */}
       <section id="frapes">
         <h2 className="text-3xl font-bold mb-6">Frapes</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -143,7 +143,7 @@ export default function Menu() {
         </div>
       </section>
 
-      {/* Sección Postres */}
+      {/* Sección Sandwiches */}
       <section id="sandwich">
         <h2 className="text-3xl font-bold mb-6">Sandwiches</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
